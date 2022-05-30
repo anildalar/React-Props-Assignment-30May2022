@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Child from './Child';
 
-function App() {
+function App(props) { //Formal Argument
+
+  //props.name
+  console.log(props);
   return (
     <div className="App">
       <header className="App-header">
+        { console.log(typeof(props)) }
+        { props.myfullname }
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <Child mychildprop={props.myfullname} />
       </header>
     </div>
   );
