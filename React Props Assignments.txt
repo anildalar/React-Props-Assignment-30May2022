@@ -1,0 +1,37 @@
+<parent>
+		<child></child>
+</parent>
+
+let parent = ()=>{
+		return <h1> Parent Component <child /></h1>
+}
+
+let child = ()=>{
+		return <h1>Child Component</h1>
+}
+
+1. How to pass a data to component
+2. How to recive the data inside component
+3. How to pass the recived data to another child componett
+
+Html Tags
+
+<div attribute="value">Content Area</div>
+
+React 
+	
+<div props={data}>Content Area</div>
+
+{} is used to evalute an expression NodeJS
+
+
+"{ 10 + 10 }"
+name="Anil"
+A Functional
+		B Class
+				C Functional
+						D Class
+								E
+									....
+												Z
+													CHild
